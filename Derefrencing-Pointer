@@ -1,0 +1,15 @@
+
+#include <stdio.h>
+
+int main()
+{
+    int a = 10, *p;
+    float b = 5.5, *q;
+    p = &a;
+    q = &b;
+    printf("%d %u\n",a, &a);
+    printf("%f %u\n", b, &b);
+    printf("%u\n", *p, p);
+    printf("%u\n", *q, q);
+    return 0;
+}
