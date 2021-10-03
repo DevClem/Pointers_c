@@ -4,11 +4,17 @@ int main()
     int a = 5, *p, **q;
     p = &a;
     q = &p;
-    printf("%d\n", a);
-    printf("%d\n", *p);
-    printf("%d\n", **q);
-    printf("%u\n", &a);
-    printf("%u\n", p);
-    printf("%u\n", *q);
+    
+    printf("Address of a = %u\n", &a);
+    printf("Value of p = Address of a = %u\n", p);
+    printf("Value of *p = Value of a = %u\n", *p);
+    
+    printf("Address of p = %u\n", &p);
+    printf("Value of q = Address of p = %u\n", q);
+    printf("Value of *q = Value of p = %u\n", *q);
+    printf("Value of **q = Value of a = %d\n", **q);
+    
+    printf("Address of q = %u\n", &q);
+    
     return 0;
 }
